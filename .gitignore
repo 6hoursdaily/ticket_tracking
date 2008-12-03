@@ -1,0 +1,10 @@
+config/database.yml
+db/*
+!db/migrate
+log/*
+tmp/*
+*~
+#*#
+.#*
+coverage
+public/images/*
