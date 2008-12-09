@@ -4,6 +4,7 @@ class CreateTickets < ActiveRecord::Migration
       t.references :category, :user, :null => false
       t.text :body, :null => false
       t.integer :ip_address, :null => false
+      t.references :status, :user, :null => false
       t.timestamps
     end
   end

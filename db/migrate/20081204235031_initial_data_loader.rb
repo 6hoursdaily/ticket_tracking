@@ -27,6 +27,13 @@ class InitialDataLoader < ActiveRecord::Migration
     ['En proceso', 'Cerrado', 'Cancelado', 'Duplicado'].each do |name|
         Status.create(:name => name)
     end
+    
+    [{:login => 'alex', :password => 'bingo!', :password_confirmation => 'bingo!', :email => 'xp1orer@nodomain.com'}].each do |h|
+        @user = User.create!(h)
+        @user.categories << Category.all[0..5]
+        @user.save
+      end
+    
   end
 
   def self.down
