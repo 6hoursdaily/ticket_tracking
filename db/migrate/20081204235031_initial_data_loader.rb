@@ -12,6 +12,7 @@ class InitialDataLoader < ActiveRecord::Migration
       'SIESTA',
       'Cluster Brodix',
       'Cluster Ollín',
+      'Supercómputo',
       'Laboratorio de cómputo de Sistemas Complejos',
       'Laboratorio de cómputo de Física Teórica',
       'Laboratorio de cómputo general de estudiantes (VAX)',
